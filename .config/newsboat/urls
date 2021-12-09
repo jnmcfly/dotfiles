@@ -1,0 +1,17 @@
+http://www.tagesschau.de/xml/rss2 "News"
+http://www.hna.de/lokales/schwalmstadt/rssfeed.rdf "Lokal"
+https://nh24.de/feed/ "Lokal"
+http://blog.fefe.de/rss.xml?html "Chaos"
+http://www.lawblog.de/index.php/feed/atom/ "Chaos"
+http://www.linus-neumann.de/feed/ "Chaos"
+https://t3n.de/rss.xml "t3n News"
+https://hessenfischer.net/feed/ "Hessenfischer"
+https://www.goldeimer.de/feed/ "Goldeimer"
+https://forum.manjaro.org/c/announcements/11.rss "manjaro"
+https://news.ycombinator.com/rss "Hackernews"
+https://www.reddit.com/r/worldnews/.rss "worldnews"
+https://www.reddit.com/r/kubernetes/.rss "kubernetes"
+https://infrastructure-as-code.com/zfeed.xml
+https://www.reddit.com/r/linux/.rss "linux"
+https://www.reddit.com/r/sysadmin/.rss "sysadmin"
+https://www.nabu.de/wir-ueber-uns/infothek/rssfeed.php

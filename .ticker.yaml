@@ -1,0 +1,38 @@
+show-tags: true
+show-fundamentals: true
+show-summary: true
+show-separator: false
+show-holdings: true
+interval: 10
+sort: alpha
+lots:
+  - symbol: "IWDA.L"
+    quantity: 555.7348
+    unit_cost: 60
+  - symbol: "PFE.DE"
+    quantity: 15
+    unit_cost: 34.60
+  - symbol: "AHLA.DE"
+    quantity: 2
+    unit_cost: 192
+  - symbol: "RKET.DE"
+    quantity: 1
+    unit_cost: 51.19
+  - symbol: "UEF5.DE"
+    quantity: 190
+    unit_cost: 13.993
+  - symbol: "1QZ.DE"
+    quantity: 1
+    unit_cost: 324
+  - symbol: "TCEHY"
+    quantity: 4
+    unit_cost: 67.82
+  - symbol: "2B7K.DE"
+    quantity: 818
+    unit_cost: 7.97
+  - symbol: "VAR1.DE"
+    quantity: 4
+    unit_cost: 133.50
+  - symbol: "TSLA"
+    quantity: 1
+    unit_cost: 571.90

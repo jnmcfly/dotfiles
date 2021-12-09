@@ -1,0 +1,39 @@
+#! /bin/sh
+
+~/.screenlayout/dual.sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar -q main -c "$HOME/.config/polybar/blocks/config.ini" &
+  done
+else
+  polybar --reload example &
+fi
+
+# xmodmap $HOME/.Xmodmap
+
+feh --randomize --bg-fill ${HOME}/.wallpapers &
+
+pgrep -x picom > /dev/null || picom &
+
+pgrep -x dunst > /dev/null || dunst &
+
+pgrep -x snapclient > /dev/null || snapclient &
+
+pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto -c /home/jn/barrier.conf --address :24800 &
+
+bspc monitor %DP-0.8 -d I II III IV V 
+bspc monitor %DP-0.1.8 -d VI VII VIII IX X
+
+bspc config border_width         1
+bspc config window_gap          23
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focused_border_color '#000000'
+
+bspc rule -a kitty state=floating
+bspc rule -a zoom state=floating
