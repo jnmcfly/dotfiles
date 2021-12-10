@@ -1,6 +1,15 @@
+# oh-my-zsh stuff
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git git-extras kubectl fzf z aws nmap kube-ps1)
+plugins=(archlinux git git-extras kubectl fzf terraform z kube-ps1)
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_AUTO_TITLE="true"
+# ENABLE_CORRECTION="true"
+source $ZSH/oh-my-zsh.sh
+
+
+# kube-ps1 stuff
 KUBE_PS1_SYMBOL_ENABLE=false
 KUBE_PS1_SUFFIX=""
 KUBE_PS1_PREFIX=""
@@ -9,21 +18,18 @@ KUBE_PS1_DIVIDER=":"
 KUBE_PS1_CTX_COLOR="yellow"
 KUBE_PS1_NS_COLOR="cyan"
 
-source $ZSH/oh-my-zsh.sh
-
-alias install='sudo apt install'
+# alias stuff
 alias more='less'
 alias c='clear && clear'
-alias updateall='sudo apt update && sudo apt upgrade -y'
 alias grep='grep --color=auto'
 alias mkdir='mkdir -p -v'
 alias ..='cd ..'
-alias yalla='kitty --session ~/session.test'
-alias install='sudo pacman -Sy'
-alias update='sudo pacman -Syyu'
 alias vim='lvim'
 alias vi='lvim'
 alias nvim='lvim'
+
+# autocompletion stuff
+autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
 function _sourceFile() {
@@ -40,11 +46,11 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/go/bin:$PATH"
 export KUBECONFIG="$KUBECONFIG:$HOME/.kube/config"
 export GOPATH="${HOME}/go"
 
-if [[ $(kcgc | wc -l) > 1 ]]; then
-    kubeon -g
-else
-    kubeoff -g
-fi
+# if [[ $(kcgc | wc -l) > 1 ]]; then
+#     kubeon -g
+#     RPROMPT='$(kube_ps1)'
+# else
+#     kubeoff -g
+# fi
 
 
-RPROMPT='$(kube_ps1)'

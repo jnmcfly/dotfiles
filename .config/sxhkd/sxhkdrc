@@ -34,7 +34,7 @@ alt + F18
 
 # program launcher
 super + @space
-	rofi -show combi -combi-modi "window,ssh,drun" -modi combi -theme ~/.config/polybar/blocks/scripts/rofi/launcher.rasi
+	rofi -show combi -combi-modi "window,ssh,drun" -modi combi -theme ~/.config/polybar/scripts/rofi/launcher.rasi
 
 ## Toggle beetwen floating & tiled
 super + ctrl + space
