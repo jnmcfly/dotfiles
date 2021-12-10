@@ -5,7 +5,6 @@ plugins=(archlinux git git-extras kubectl fzf terraform z kube-ps1)
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
-# ENABLE_CORRECTION="true"
 source $ZSH/oh-my-zsh.sh
 
 
@@ -41,10 +40,13 @@ function _sourceFile() {
 _sourceFile "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 _sourceFile "/usr/share/z/z.sh"
 
+# exports
 export EDITOR="lvim"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/go/bin:$PATH"
 export KUBECONFIG="$KUBECONFIG:$HOME/.kube/config"
 export GOPATH="${HOME}/go"
+export MOOD="nature"
+
 
 # if [[ $(kcgc | wc -l) > 1 ]]; then
 #     kubeon -g
