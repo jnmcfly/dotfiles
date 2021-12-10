@@ -22,7 +22,7 @@ pgrep -x dunst > /dev/null || dunst &
 
 pgrep -x snapclient > /dev/null || snapclient &
 
-pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto -c /home/jn/barrier.conf --address :24800 &
+pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto --address :24800 &
 
 bspc monitor %DP-0.8 -d I II III IV V 
 bspc monitor %DP-0.1.8 -d VI VII VIII IX X
