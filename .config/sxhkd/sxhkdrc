@@ -2,19 +2,8 @@
 super + Return
 	kitty
 
-ctrl + button9
-  bspc desktop -f last
-
-ctrl + button8
-  kitty
-
-# run thunar
 super + e
 	thunar
-
-# change screen
-XF86Launch9
-  mons.sh
 
 XF86Launch5
   code -n
@@ -97,3 +86,6 @@ super + alt + shift + {Left,Down,Up,Right}
 
 super + u
   bspc node -R 90
+
+super + {Up,Down}
+  bspc config window_gap {80,23}
