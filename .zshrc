@@ -33,10 +33,6 @@ function _sourceFile() {
 }
 
 _sourceFile "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
-_sourceFile "$HOME/.zsh/k28s_ssh.zsh"
-_sourceFile "$HOME/git/gitlab.aoe.com/project/k28s/ansible/ec2_cli/ec2.zsh"
-_sourceFile "$HOME/git/github.com/z/z.sh"
-_sourceFile "$HOME/.aoerc"
 _sourceFile "/usr/share/z/z.sh"
 
 export EDITOR="lvim"
