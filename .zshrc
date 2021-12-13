@@ -26,6 +26,7 @@ alias ..='cd ..'
 alias vim='lvim'
 alias vi='lvim'
 alias nvim='lvim'
+alias k='kubectl'
 
 # autocompletion stuff
 autoload -U +X compinit && compinit
