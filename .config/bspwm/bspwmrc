@@ -2,6 +2,8 @@
 
 ~/.screenlayout/dual.sh
 
+MOOD="nature"
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 if type "xrandr"; then
@@ -12,9 +14,10 @@ else
   polybar --reload example &
 fi
 
-# xmodmap $HOME/.Xmodmap
+feh --randomize --bg-fill ${HOME}/.wallpapers/${MOOD}/ 
 
-feh --randomize --bg-fill ${HOME}/.wallpapers &
+~/.scripts/mood_feh.sh 
+
 
 pgrep -x picom > /dev/null || picom &
 
