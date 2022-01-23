@@ -1,7 +1,7 @@
 # oh-my-zsh stuff
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(archlinux git git-extras kubectl fzf terraform z kube-ps1)
+plugins=(archlinux timewarrior git git-extras kubectl fzf terraform z kube-ps1)
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
