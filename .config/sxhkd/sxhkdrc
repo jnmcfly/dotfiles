@@ -23,14 +23,11 @@ XF86Launch7
 XF86Launch6
   xdg-open https://github.com
 
-F18
-  amixer set Master toggle
+XF86AudioRaiseVolume
+  amixer set -q Master 3%+
 
-shift + F18
-  amixer -q sset Master  3%+
-
-alt + F18
-  amixer -q sset Master  3%-
+XF86AudioLowerVolume
+  amixer set -q Master 3%-
 
 # program launcher
 super + @space
