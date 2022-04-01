@@ -1,6 +1,6 @@
 #! /bin/sh
 
-~/.screenlayout/dual.sh
+# ~/.screenlayout/dual.sh
 
 MOOD="nature"
 
