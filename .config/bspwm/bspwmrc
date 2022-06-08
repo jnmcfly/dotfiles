@@ -16,9 +16,6 @@ fi
 
 feh --randomize --bg-fill ${HOME}/.wallpapers/${MOOD}/ 
 
-~/.scripts/mood_feh.sh 
-
-
 pgrep -x picom > /dev/null || picom &
 
 pgrep -x dunst > /dev/null || dunst &
@@ -27,8 +24,14 @@ pgrep -x snapclient > /dev/null || snapclient &
 
 pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto --address :24800 &
 
-bspc monitor %DP-0.8 -d I II III IV V 
-bspc monitor %DP-0.1.8 -d VI VII VIII IX X
+case "$( mons | grep -wc enabled )" in
+  1) bspc monitor %DP-0.8 -d sh browser code slack discord lens 1 2 3 4 5
+  ;;
+  2) bspc monitor %DP-0.1.8 -d sh browser code empty1 empty2 lens && bspc monitor %DP-0.8 -d slack discord 1 2 3
+  ;;
+  *) echo default
+  ;;
+esac
 
 bspc config border_width         1
 bspc config window_gap          23
