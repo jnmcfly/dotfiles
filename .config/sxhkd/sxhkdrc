@@ -2,6 +2,11 @@
 super + Return
 	kitty
 
+alt + p
+  bspc window -t floating
+  bspc window -t sticky
+
+
 super + e
 	thunar
 
