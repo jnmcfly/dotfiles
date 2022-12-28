@@ -1,0 +1,193 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_keybindings.json:
+    src: config/Code/User/keybindings.json
+    dst: ~/.config/Code/User/keybindings.json
+  f_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
+  f_readme.code-snippets:
+    src: config/Code/User/snippets/README.code-snippets
+    dst: ~/.config/Code/User/snippets/README.code-snippets
+  f_bpytop.conf:
+    src: config/bpytop/bpytop.conf
+    dst: ~/.config/bpytop/bpytop.conf
+  f_bspwmrc:
+    src: config/bspwm/bspwmrc
+    dst: ~/.config/bspwm/bspwmrc
+    chmod: '755'
+  f_config:
+    src: config/cava/config
+    dst: ~/.config/cava/config
+  f_config.toml:
+    src: config/cointop/config.toml
+    dst: ~/.config/cointop/config.toml
+  f_dunstrc:
+    src: config/dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
+  f_bookmarks:
+    src: config/gtk-3.0/bookmarks
+    dst: ~/.config/gtk-3.0/bookmarks
+  f_settings.ini:
+    src: config/gtk-3.0/settings.ini
+    dst: ~/.config/gtk-3.0/settings.ini
+  f_views.yml:
+    src: config/k9s/views.yml
+    dst: ~/.config/k9s/views.yml
+  f_kitty.conf:
+    src: config/kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
+  f_config.lua:
+    src: config/lvim/config.lua
+    dst: ~/.config/lvim/config.lua
+  f_packer_compiled.lua:
+    src: config/lvim/plugin/packer_compiled.lua
+    dst: ~/.config/lvim/plugin/packer_compiled.lua
+  f_ncmpcpp_config:
+    src: config/ncmpcpp/config
+    dst: ~/.config/ncmpcpp/config
+  f_error.log:
+    src: config/ncmpcpp/error.log
+    dst: ~/.config/ncmpcpp/error.log
+  f_urls:
+    src: config/newsboat/urls
+    dst: ~/.config/newsboat/urls
+  f_picom.conf:
+    src: config/picom/picom.conf
+    dst: ~/.config/picom/picom.conf
+  f_bars.ini:
+    src: config/polybar/bars.ini
+    dst: ~/.config/polybar/bars.ini
+  f_colors.ini:
+    src: config/polybar/colors.ini
+    dst: ~/.config/polybar/colors.ini
+  f_config.ini:
+    src: config/polybar/config.ini
+    dst: ~/.config/polybar/config.ini
+  f_launch.sh:
+    src: config/polybar/launch.sh
+    dst: ~/.config/polybar/launch.sh
+    chmod: '755'
+  f_modules.ini:
+    src: config/polybar/modules.ini
+    dst: ~/.config/polybar/modules.ini
+  f_preview.ini:
+    src: config/polybar/preview.ini
+    dst: ~/.config/polybar/preview.ini
+  f_preview.sh:
+    src: config/polybar/preview.sh
+    dst: ~/.config/polybar/preview.sh
+    chmod: '755'
+  f_checkupdates:
+    src: config/polybar/scripts/checkupdates
+    dst: ~/.config/polybar/scripts/checkupdates
+    chmod: '755'
+  f_launcher.sh:
+    src: config/polybar/scripts/launcher.sh
+    dst: ~/.config/polybar/scripts/launcher.sh
+    chmod: '755'
+  f_powermenu.sh:
+    src: config/polybar/scripts/powermenu.sh
+    dst: ~/.config/polybar/scripts/powermenu.sh
+    chmod: '755'
+  f_colors.rasi:
+    src: config/polybar/scripts/rofi/colors.rasi
+    dst: ~/.config/polybar/scripts/rofi/colors.rasi
+  f_confirm.rasi:
+    src: config/polybar/scripts/rofi/confirm.rasi
+    dst: ~/.config/polybar/scripts/rofi/confirm.rasi
+  f_launcher.rasi:
+    src: config/polybar/scripts/rofi/launcher.rasi
+    dst: ~/.config/polybar/scripts/rofi/launcher.rasi
+  f_message.rasi:
+    src: config/polybar/scripts/rofi/message.rasi
+    dst: ~/.config/polybar/scripts/rofi/message.rasi
+  f_networkmenu.rasi:
+    src: config/polybar/scripts/rofi/networkmenu.rasi
+    dst: ~/.config/polybar/scripts/rofi/networkmenu.rasi
+  f_powermenu.rasi:
+    src: config/polybar/scripts/rofi/powermenu.rasi
+    dst: ~/.config/polybar/scripts/rofi/powermenu.rasi
+  f_styles.rasi:
+    src: config/polybar/scripts/rofi/styles.rasi
+    dst: ~/.config/polybar/scripts/rofi/styles.rasi
+  f_updates.sh:
+    src: config/polybar/scripts/updates.sh
+    dst: ~/.config/polybar/scripts/updates.sh
+    chmod: '755'
+  f_user_modules.ini:
+    src: config/polybar/user_modules.ini
+    dst: ~/.config/polybar/user_modules.ini
+  f_redshift.conf:
+    src: config/redshift/redshift.conf
+    dst: ~/.config/redshift/redshift.conf
+  f_config.rasi:
+    src: config/rofi/config.rasi
+    dst: ~/.config/rofi/config.rasi
+  f_sxhkdrc:
+    src: config/sxhkd/sxhkdrc
+    dst: ~/.config/sxhkd/sxhkdrc
+  f_tropical-torvalds.sh:
+    src: screenlayout/tropical-torvalds.sh
+    dst: ~/.screenlayout/tropical-torvalds.sh
+    chmod: '755'
+  f_user_keybindings.json:
+    src: config/Code - OSS/User/keybindings.json
+    dst: ~/.config/Code - OSS/User/keybindings.json
+  f_user_settings.json:
+    src: config/Code - OSS/User/settings.json
+    dst: ~/.config/Code - OSS/User/settings.json
+profiles:
+  tropical-torvalds:
+    dotfiles:
+    - f_keybindings.json
+    - f_settings.json
+    - f_readme.code-snippets
+    - f_bpytop.conf
+    - f_bspwmrc
+    - f_config
+    - f_config.toml
+    - f_dunstrc
+    - f_bookmarks
+    - f_settings.ini
+    - f_views.yml
+    - f_kitty.conf
+    - f_config.lua
+    - f_packer_compiled.lua
+    - f_ncmpcpp_config
+    - f_error.log
+    - f_urls
+    - f_picom.conf
+    - f_bars.ini
+    - f_colors.ini
+    - f_config.ini
+    - f_launch.sh
+    - f_modules.ini
+    - f_preview.ini
+    - f_preview.sh
+    - f_checkupdates
+    - f_launcher.sh
+    - f_powermenu.sh
+    - f_colors.rasi
+    - f_confirm.rasi
+    - f_launcher.rasi
+    - f_message.rasi
+    - f_networkmenu.rasi
+    - f_powermenu.rasi
+    - f_styles.rasi
+    - f_updates.sh
+    - f_user_modules.ini
+    - f_redshift.conf
+    - f_config.rasi
+    - f_sxhkdrc
+    - f_tropical-torvalds.sh
+    - f_user_keybindings.json
+    - f_user_settings.json
