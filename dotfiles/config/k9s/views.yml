@@ -1,0 +1,12 @@
+k9s:
+  views:
+    v1/pods:
+      columns:
+        - NAME
+        - STATUS
+        - CPU
+        - MEM
+        - READY
+        - RESTARTS
+        - AGE
+        - NODE

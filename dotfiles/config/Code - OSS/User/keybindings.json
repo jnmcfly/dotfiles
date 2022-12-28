@@ -1,0 +1,111 @@
+// Place your key bindings in this file to override the defaults
+[{
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "plan-stage"
+},
+{
+    "key": "ctrl+alt+up",
+    "command": "workbench.files.action.focusFilesExplorer"
+},
+{
+    "key": "ctrl+alt+down",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+},
+{
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+},
+{
+    "key": "ctrl+alt+up",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.togglePanel"
+},
+{
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+},
+{
+    "key": "alt+b",
+    "command": "gitlens.toggleFileBlame"
+},
+{
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-rest-client.generate-codesnippet",
+    "when": "editorTextFocus && editorLangId == 'http'"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-rest-client.generate-codesnippet",
+    "when": "editorTextFocus && editorLangId == 'plaintext'"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-search.action.copyPath",
+    "when": "fileMatchOrFolderMatchWithResourceFocus"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "extension.conventionalCommits"
+},
+{
+    "key": "ctrl+alt+p",
+    "command": "git.push"
+},
+{
+    "key": "ctrl+alt+l",
+    "command": "-rest-client.rerun-last-request",
+    "when": "editorTextFocus && editorLangId == 'http'"
+},
+{
+    "key": "ctrl+alt+l",
+    "command": "-rest-client.rerun-last-request",
+    "when": "editorTextFocus && editorLangId == 'plaintext'"
+},
+{
+    "key": "ctrl+alt+l",
+    "command": "-rest-client.rerun-last-request",
+    "when": "httpResponsePreviewFocus"
+},
+{
+    "key": "ctrl+alt+l",
+    "command": "git.pull"
+}
+]

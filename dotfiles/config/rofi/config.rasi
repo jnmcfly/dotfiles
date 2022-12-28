@@ -1,0 +1,17 @@
+configuration{
+    modi: "run,drun,window,ssh";
+    show-icons: true;
+    font: "FiraCode Nerd Font";
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    display-ssh: " 󰼂 SSH";
+    sidebar-mode: true;
+}
+
+@theme "catppuccin-mocha"

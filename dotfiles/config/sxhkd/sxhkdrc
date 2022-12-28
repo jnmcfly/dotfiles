@@ -1,0 +1,71 @@
+# RUN
+super + Return
+	kitty
+
+super + e
+	thunar
+
+super + @space
+	rofi -show drun
+
+super + x
+  betterlockscreen -l blur
+
+## Toggle beetwen floating & tiled
+super + ctrl + space
+    bspc node -t "~"{floating,tiled}
+
+# move a floating window
+super + ctrl + {Left,Right}
+	bspc node --to-desktop {prev,next}.local
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+super + {a,s}
+  bsp-layout {previous,next}
+
+# focus the next/previous desktop in the current monitor
+super + {Left,Right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# expand a window by moving one of its side outward
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+super + {Up,Down}
+  bspc config window_gap {23,80}
+
+super + f
+  bspc node -t fullscreen
+
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+

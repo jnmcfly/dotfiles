@@ -1,0 +1,143 @@
+// Place your key bindings in this file to override the defaults
+[{
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "plan-stage"
+},
+{
+    "key": "ctrl+alt+up",
+    "command": "workbench.files.action.focusFilesExplorer"
+},
+{
+    "key": "ctrl+alt+down",
+    "command": "workbench.view.scm"
+},
+{
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+},
+{
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+},
+{
+    "key": "ctrl+alt+up",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.togglePanel"
+},
+{
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+},
+{
+    "key": "alt+b",
+    "command": "gitlens.toggleFileBlame"
+},
+{
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-rest-client.generate-codesnippet",
+    "when": "editorTextFocus && editorLangId == 'http'"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-rest-client.generate-codesnippet",
+    "when": "editorTextFocus && editorLangId == 'plaintext'"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-search.action.copyPath",
+    "when": "fileMatchOrFolderMatchWithResourceFocus"
+},
+{
+    "key": "f15",
+    "command": "extension.conventionalCommits"
+},
+{
+    "key": "f14",
+    "command": "workbench.view.explorer"
+},
+{
+    "key": "f19",
+    "command": "workbench.view.scm"
+},
+{
+    "key": "ctrl+alt+p",
+    "command": "git.push"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.splitEditorRight"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-notebook.cell.insertCodeCellAbove",
+    "when": "notebookCellListFocused && !inputFocus"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFolder",
+    "when": "folderMatchFocus && replaceActive && searchViewletVisible"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-list.toggleSelection",
+    "when": "listFocus && !inputFocus"
+},
+{
+    "key": "ctrl+shift+y",
+    "command": "workbench.action.toggleStatusbarVisibility",
+    "when": "workbench.panel.repl.view.active"
+},
+{
+    "key": "ctrl+shift+y",
+    "command": "extension.multiCommand.execute",
+    "args":{
+        "sequence":[
+            "workbench.action.toggleActivityBarVisibility",
+            "workbench.action.toggleStatusbarVisibility"
+        ]
+    }
+}
+]

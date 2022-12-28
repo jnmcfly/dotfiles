@@ -1,0 +1,71 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "files.defaultLanguage": "yaml",
+    "terminal.integrated.copyOnSelection": true,
+    "files.encoding": "utf8",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.rebaseWhenSync": true,
+    "terminal.integrated.scrollback": 100000,
+    "gitlens.blame.avatars": true,
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "git.suggestSmartCommit": false,
+    "local-history.daysLimit": 30,
+    "local-history.enabled": 1,
+    "local-history.path": "/home/jn/.vscodehistory/",
+    "local-history.saveDelay": 30,
+    "shellcheck.disableVersionCheck": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "shellcheck.exclude": [
+        "2148"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.settings.editor": "json",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": ".github/workflows/*"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.venvPath": "env",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.menuBarVisibility": "toggle",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.productIconTheme": "feather-vscode",
+    "window.zoomLevel": 1,
+    "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "[Catppuccin Mocha]": {
+            "statusBar.background": "#1e1e2e",
+            "statusBar.foreground": "#cdd6f4",
+            "statusBar.noFolderBackground": "#1e1e2e",
+            "statusBar.noFolderForeground": "#cdd6f4",
+            "editorWhitespace.foreground": "#45475a"
+        }
+    }
+}
