@@ -1,7 +1,5 @@
 # dotfiles
 
-![pic](./dotfile.png)
-
 using this:
 
    - **WM:** [bspwm](https://github.com/baskerville/bspwm)
@@ -15,11 +13,4 @@ using this:
    - **File Manager:** [thunar](https://github.com/xfce-mirror/thunar)
    - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
-restore with cyberninja kung-fu: 
-
-```shell
-cd ~
-git init .
-git remote add -t \* -f origin git@github.com:jnmcfly/dotfiles.github
-git checkout -f cool-curie
-```
+restore with [dotdrop](https://github.com/deadc0de6/dotdrop)
