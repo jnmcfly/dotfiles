@@ -18,8 +18,6 @@ pgrep -x discord > /dev/null || discord &
 
 pgrep -x dunst > /dev/null || dunst &
 
-# pgrep -x snapclient > /dev/null || snapclient &
-
 pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto --address :24800 &
 
 bspc config border_width         1
