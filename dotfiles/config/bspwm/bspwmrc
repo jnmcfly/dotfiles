@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-${HOME}/.screenlayout/$(hostname).sh "${MOOD}"
+${HOME}/.screenlayout/$(hostname).sh "br"
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -30,10 +30,10 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focused_border_color '#000000'
 
-bspc rule -a kitty state=floating
-bspc rule -a zoom state=floating
+bspc rule --add kitty state=floating
+bspc rule --add zoom state=floating
 bspc rule --add Brave-browser desktop=browser
 bspc rule --add Lens desktop=lens
-bspc rule --add discord desktop=discord
+bspc rule --add discord desktop=discord 
 bspc rule --add Slack desktop=slack
-
+bspc rule --add Zathura state=tiled
