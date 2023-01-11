@@ -148,6 +148,9 @@ dotfiles:
   d_ranger:
     src: config/ranger
     dst: ~/.config/ranger
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -195,3 +198,4 @@ profiles:
     - f_user_keybindings.json
     - f_user_settings.json
     - d_ranger
+    - f_zshrc

@@ -1,0 +1,59 @@
+# oh-my-zsh stuff
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(archlinux git git-extras kubectl fzf terraform)
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_AUTO_TITLE="true"
+TERM=kitty
+function _sourceFile() {
+    if [ -f $1 ]; then
+        source $1
+    fi
+}
+
+_sourceFile $ZSH/oh-my-zsh.sh
+
+# alias stuff
+alias more='less'
+alias c='clear && clear'
+alias grep='grep --color=auto'
+alias mkdir='mkdir -p -v'
+alias ..='cd ..'
+alias vim='lvim'
+alias vi='lvim'
+alias nvim='lvim'
+alias k='kubectl'
+alias icat="kitty +kitten icat"
+alias d="kitty +kitten diff"
+source <(kubectl completion zsh | sed 's/kubectl/k/g')
+eval "$(zoxide init zsh)"
+
+
+_sourceFile "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+_sourceFile "/usr/share/z/z.sh"
+
+# exports
+export EDITOR="lvim"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:${HOME}/go/bin:${HOME}/.local/share/gem/ruby/3.0.0/bin/:$PATH"
+export KUBECONFIG="$KUBECONFIG:$HOME/.kube/config"
+export GOPATH="${HOME}/go"
+export MOOD="br"
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export BAT_THEME="Catppuccin-mocha"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#FFBD2B,hl:#FF6930 \
+--color=fg:#7DBED1,header:#FF6930,info:#7977CF,pointer:#FFBD2B \
+--color=marker:#FFBD2B,fg+:#7DBED1,prompt:#7977CF,hl+:#FF6930"
+
+# autocompletion stuff
+
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+compinit
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
