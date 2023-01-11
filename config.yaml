@@ -11,9 +11,6 @@ dotfiles:
   f_keybindings.json:
     src: config/Code/User/keybindings.json
     dst: ~/.config/Code/User/keybindings.json
-  f_settings.json:
-    src: config/Code/User/settings.json
-    dst: ~/.config/Code/User/settings.json
   f_readme.code-snippets:
     src: config/Code/User/snippets/README.code-snippets
     dst: ~/.config/Code/User/snippets/README.code-snippets
@@ -158,7 +155,6 @@ profiles:
   tropical-torvalds:
     dotfiles:
     - f_keybindings.json
-    - f_settings.json
     - f_readme.code-snippets
     - f_bpytop.conf
     - f_bspwmrc
