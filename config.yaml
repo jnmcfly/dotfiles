@@ -151,6 +151,10 @@ dotfiles:
   d_rofi:
     src: config/rofi
     dst: ~/.config/rofi
+  f_info-timew.sh:
+    src: config/polybar/scripts/info-timew.sh
+    dst: ~/.config/polybar/scripts/info-timew.sh
+    chmod: '755'
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -199,3 +203,4 @@ profiles:
     - d_ranger
     - f_zshrc
     - d_rofi
+    - f_info-timew.sh
