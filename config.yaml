@@ -151,6 +151,9 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -199,3 +202,4 @@ profiles:
     - f_user_settings.json
     - d_ranger
     - f_zshrc
+    - d_rofi
