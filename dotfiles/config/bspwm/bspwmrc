@@ -28,10 +28,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focused_border_color '#000000'
 
-bspc rule --add kitty state=floating
 bspc rule --add zoom state=floating
-bspc rule --add Brave-browser desktop=browser
-bspc rule --add Lens desktop=lens
-bspc rule --add discord desktop=discord 
-bspc rule --add Slack desktop=slack
+bspc rule --add Lens desktop=lens follow=off
+bspc rule --add discord desktop=discord follow=off 
+bspc rule --add Slack desktop=slack follow=off
 bspc rule --add Zathura state=tiled

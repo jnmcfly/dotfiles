@@ -145,6 +145,9 @@ dotfiles:
   f_user_settings.json:
     src: config/Code - OSS/User/settings.json
     dst: ~/.config/Code - OSS/User/settings.json
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -191,3 +194,4 @@ profiles:
     - f_tropical-torvalds.sh
     - f_user_keybindings.json
     - f_user_settings.json
+    - d_ranger

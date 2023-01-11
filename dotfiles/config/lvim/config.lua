@@ -167,7 +167,8 @@ lvim.plugins = {
       "folke/trouble.nvim",
       cmd = "TroubleToggle",
     },
-    {
+    {"epwalsh/obsidian.nvim"},
+  {
     "catppuccin/nvim",
     as = "catppuccin",
     config = function()
@@ -240,4 +241,11 @@ require("catppuccin").setup({
         treesitter = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
+})
+
+require("obsidian").setup({
+  dir = "~/git/github.com/notes.work/",
+  completion = {
+    nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
+  }
 })
