@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 MOOD=$1
-BLUR=${2:=false}
+BLUR="${2:-false}"
 
 case "$(xrandr | grep -wc connected )" in
   1) bspc monitor %eDP-1 -d sh browser code slack discord lens 1 2 3 4 5;
