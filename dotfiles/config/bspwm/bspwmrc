@@ -20,7 +20,7 @@ pgrep -x dunst > /dev/null || dunst &
 
 pgrep barriers > /dev/null || /usr/bin/barriers -f --no-tray --debug INFO --name cool-curie --enable-crypto --address :24800 &
 
-bspc config border_width         1
+bspc config border_width         0
 bspc config window_gap          23
 
 bspc config split_ratio          0.52
