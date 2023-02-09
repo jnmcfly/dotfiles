@@ -1,2 +1,12 @@
-https://github.com/argoproj/argo-cd/releases.atom
-https://github.com/prometheus-community/helm-charts/releases.atom
+"query:Unread Articles:unread = \"yes\""
+https://cloud.google.com/static/feeds/gke-regular-channel-release-notes.xml
+https://github.com/kubernetes/kubernetes/releases.atom "~kubernetes/kubernetes"
+https://github.com/hashicorp/terraform/releases.atom "~hashicorp/terraform"
+https://github.com/argoproj/argo-cd/releases.atom "argocd" "~argo-cd"
+https://github.com/argoproj/argo-helm/releases.atom "argocd" "~argo-helm"
+https://alpinelinux.org/atom.xml
+https://github.com/prometheus-community/helm-charts/releases.atom "~prometheus-community-helm-charts"
+https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/releases.atom "~kubernetes-engine"
+https://github.com/terraform-google-modules/terraform-google-project-factory/releases.atom "~project-factory"
+https://github.com/terraform-google-modules/terraform-google-network/releases.atom "~google-network"
+https://github.com/terraform-google-modules/terraform-google-iam/releases.atom "~google-iam"

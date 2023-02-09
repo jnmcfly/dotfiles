@@ -12,6 +12,8 @@ else
   polybar --reload example &
 fi
 
+pgrep -x picom > /dev/null || picom &
+
 pgrep -x slack > /dev/null || slack &
 
 pgrep -x discord > /dev/null || discord &
