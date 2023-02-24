@@ -2,6 +2,9 @@
 super + Return
 	kitty
 
+XF86Launch8
+  kitty --session work
+
 super + e
 	thunar
 
