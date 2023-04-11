@@ -158,6 +158,9 @@ dotfiles:
   d_wallpapers:
     src: wallpapers
     dst: ~/.wallpapers
+  f_hyprland.conf:
+    src: config/hypr/hyprland.conf
+    dst: ~/.config/hypr/hyprland.conf
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -208,3 +211,4 @@ profiles:
     - d_rofi
     - f_info-timew.sh
     - d_wallpapers
+    - f_hyprland.conf
