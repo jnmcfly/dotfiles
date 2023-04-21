@@ -26,6 +26,7 @@ alias nvim='lvim'
 alias k='kubectl'
 alias icat="kitty +kitten icat"
 alias d="kitty +kitten diff"
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 source <(kubectl completion zsh | sed 's/kubectl/k/g')
 eval "$(zoxide init zsh)"
 
