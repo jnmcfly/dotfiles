@@ -3,7 +3,7 @@ super + Return
 	kitty
 
 XF86Tools
-  ${HOME}/.config/rofi/scripts/kubens.sh
+  zsh -C "${HOME}/.config/rofi/scripts/kubens.sh"
 
 XF86Launch8
   kitty --session work

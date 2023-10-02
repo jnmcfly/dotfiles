@@ -1,12 +1,6 @@
 lvim.log.level = "warn"
-lvim.format_on_save = false
+lvim.format_on_save.enabled = true
 lvim.leader = "space"
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.transparent_window = true
 lvim.builtin.treesitter.ensure_installed = {
   "c",
@@ -16,6 +10,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "python",
   "typescript",
   "tsx",
+  "go",
   "css",
   "rust",
   "java",
@@ -23,24 +18,27 @@ lvim.builtin.treesitter.ensure_installed = {
   "hcl"
 }
 
-lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.highlight.enable = true
 lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  {"epwalsh/obsidian.nvim"},
-  {"Pocco81/auto-save.nvim"},
-  {"hashivim/vim-terraform"},
-  {"vim-autoformat/vim-autoformat"},
-  {"chrisbra/colorizer"},
+  { "Pocco81/auto-save.nvim" },
+  { "hashivim/vim-terraform" },
+  { "chrisbra/colorizer" },
+  { "mustache/vim-mustache-handlebars" },
+  { "mg979/vim-visual-multi", branch = "master" },
+  { "displeased/conventional.vim" }
 }
 
-require("obsidian").setup({
-  dir = "~/git/github.com/notes.work/",
-  completion = {
-    nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
-  }
+
+local null_ls = require("null-ls")
+
+null_ls.setup({
+  sources = {
+    null_ls.builtins.formatting.terraform_fmt,
+    null_ls.builtins.diagnostics.markdownlint,
+  },
 })
 
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/Code/User/snippets" } })

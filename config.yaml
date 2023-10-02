@@ -161,6 +161,17 @@ dotfiles:
   f_hyprland.conf:
     src: config/hypr/hyprland.conf
     dst: ~/.config/hypr/hyprland.conf
+  d_scripts:
+    src: scripts
+    dst: ~/.scripts
+  f_scripts_info-timew.sh:
+    src: scripts/info-timew.sh
+    dst: ~/.scripts/info-timew.sh
+    chmod: '755'
+  f_kubecontext.sh:
+    src: scripts/kubecontext.sh
+    dst: ~/.scripts/kubecontext.sh
+    chmod: '755'
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -212,3 +223,6 @@ profiles:
     - f_info-timew.sh
     - d_wallpapers
     - f_hyprland.conf
+    - d_scripts
+    - f_scripts_info-timew.sh
+    - f_kubecontext.sh
