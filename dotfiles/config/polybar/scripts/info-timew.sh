@@ -9,17 +9,25 @@ fi
 
 ACTUAL_MODE=$(cat "${MODE_FILE}")
 
+# if timew > /dev/null 2>&1; then
+#   if [ "$ACTUAL_MODE" = "w" ]; then
+#     printf '{"text": "%s/week", "class": "timew"}' "$(timew summary :week | awk '{print $NF}' | tail -2 | head -1)"
+#   else
+#     printf '{"text": "%s/day", "class": "timew"}' "$(timew summary :day | awk '{print $NF}' | tail -2 | head -1)"
+#   fi
+# else
+#     printf "no tracking"
+# fi
+
 if timew > /dev/null 2>&1; then
   if [ "$ACTUAL_MODE" = "w" ]; then
-    printf '{"text": "%s/week", "class": "timew"}' "$(timew summary :week | awk '{print $NF}' | tail -2 | head -1)"
+    printf '%s/week' "$(timew summary :week | awk '{print $NF}' | tail -2 | head -1)"
   else
-    printf '{"text": "%s/day", "class": "timew"}' "$(timew summary :day | awk '{print $NF}' | tail -2 | head -1)"
+    printf '%s/day' "$(timew summary :day | awk '{print $NF}' | tail -2 | head -1)"
   fi
 else
     printf "no tracking"
 fi
-
-
 
 if [ "${1}" = "--weekday" ]; then
   if [ "$ACTUAL_MODE" = "w"  ]; then
