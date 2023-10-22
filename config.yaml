@@ -172,6 +172,9 @@ dotfiles:
     src: scripts/kubecontext.sh
     dst: ~/.scripts/kubecontext.sh
     chmod: '755'
+  f_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
 profiles:
   tropical-torvalds:
     dotfiles:
@@ -226,3 +229,4 @@ profiles:
     - d_scripts
     - f_scripts_info-timew.sh
     - f_kubecontext.sh
+    - f_settings.json
